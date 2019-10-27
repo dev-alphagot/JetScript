@@ -1,0 +1,14 @@
+{
+  "name": "lang",
+  "version": "1.0.0",
+  "description": "lang",
+  "main": "main.js",
+  "scripts": {
+    "test": "node main.js"
+  },
+  "author": "Minecart8925",
+  "license": "GPL-3.0-or-later",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
