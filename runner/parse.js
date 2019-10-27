@@ -2,7 +2,7 @@ module.exports.parse = async (code) => {
     try{
         let cuted = code.split("  ");
         //console.log(cuted);
-        let exec = require('./exec.js.js');
+        let exec = require('./exec.js');
 
         for(let i = 0; i < cuted.length; i++){
             cuted[i].replace("/\n/gi", "  ");

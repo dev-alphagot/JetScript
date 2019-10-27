@@ -50,6 +50,10 @@ module.exports.run = async (code) => {
                 delete compute_data;
                 break;
 
+            case "delete":
+                virtual_memory[`${excute[code_prograss + 1]}`] = "";
+                break;
+
             default:
                 code_prograss++;
         }

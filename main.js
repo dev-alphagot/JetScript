@@ -3,7 +3,7 @@ const fs = require('fs');
 run();
 
 async function run(code){
-    let step1 = require('./JetScript/runner/parse.js.js');
+    let step1 = require('./runner/parse.js');
     let target_file = process.argv[2];
     let src;
 

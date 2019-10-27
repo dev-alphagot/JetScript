@@ -1,4 +1,7 @@
 fnc  main  
-  main  <-  1*1  
-  compute  main
+  main  <-  1*2  
+  compute  main  
   ioout  main  
+  delete main  
+  main  <-  Hello World  
+  ioout  main     
