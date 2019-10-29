@@ -1,6 +1,14 @@
 module.exports.parse = async (code) => {
+    let cut_let;
+    let synconfig = require('./config.json').useoldsyntax;
+    if(synconfig) {
+        cut_let = "  ";
+    } else {
+        cut_let = ";;";
+    }
+    
     try{
-        let cuted = code.split("  ");
+        let cuted = code.split(cut_let);
         //console.log(cuted);
         let exec = require('./exec.js');
 

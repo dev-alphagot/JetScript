@@ -1,7 +1,9 @@
-fnc  main  
-  main  <-  1*2  
-  compute  main  
-  ioout  main  
-  delete main  
-  main  <-  Hello World  
-  ioout  main     
+fnc  main;;
+main  <-  1*2;;
+compute  main;;
+ioout  main;;
+main  <-  Hello, World!;;
+ioout  main;;
+fnc k;;
+k  <=  main;;
+ioout  k;;
