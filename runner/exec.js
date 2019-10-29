@@ -38,7 +38,17 @@ module.exports.run = async (code) => {
                 break;
 
             case "delete":
+                virtual_memory[`${excute[1]}`] = "";
                 code_prograss++;
+                break;
+
+            case "jump":
+                code_prograss = excute[1];
+                code_prograss++;
+                break;
+
+            case "end":
+                code_prograss = codelet;
                 break;
 
             default:

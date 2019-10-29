@@ -7,3 +7,8 @@ ioout  main;;
 fnc k;;
 k  <=  main;;
 ioout  k;;
+delete  k;;
+ioout  k;;
+k  <=  main;;
+ioout  main;;
+jump 0;;
