@@ -1,14 +1,7 @@
 fnc  main;;
 main  <-  1*2;;
 compute  main;;
-ioout  main;;
-main  <-  Hello, World!;;
-ioout  main;;
-fnc k;;
-k  <=  main;;
-ioout  k;;
-delete  k;;
-ioout  k;;
-k  <=  main;;
-ioout  main;;
-jump 0;;
+ioout_buf  <=  main;;
+ioout;;
+ioout_buf  <=+  Hello, World!;;
+ioout;;

@@ -1,7 +1,7 @@
 {
-  "name": "lang",
+  "name": "jetscript",
   "version": "1.0.0",
-  "description": "lang",
+  "description": "jetscript code runner",
   "main": "main.js",
   "scripts": {
     "test": "node main.js"
