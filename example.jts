@@ -11,4 +11,8 @@ if  k  l  end
 k  <-  2;;
 l  <-  2;;
 k  ++;;
+k  <-  3;;
+while  k  l  17;;
+k ++;
+end
 jump  2;;

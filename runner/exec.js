@@ -78,9 +78,33 @@ async function start(code_prograss, codelet, virtual_memory, execute_before) {
                     for(let k = 3; k < execute.length; k++){
                         kl += execute[k];
                     }
-                    start(0, 1, virtual_memory, kl);
+                    if(match_data == match_data_2){
+                        start(0, 1, virtual_memory, kl);
+                    }
+                    code_prograss++;
                     delete match_data;
                     delete match_data_2;
+                    delete kl;
+                    break;
+
+                case "while":
+                    let match_data1 = virtual_memory[`${execute[1]}`];
+                    let match_data_21 = virtual_memory[`${execute[2]}`];
+                    let endline = execute[3];
+                    let kl1;
+                    let x = true;
+                    kl1 += execute_before[codelet + 1];
+                    for(let v = codelet + 2; v == endline; v++){
+                        kl1 += execute_before[v];
+                    }
+                    while(x){
+                        start(0, 1, virtual_memory, kl);
+                        if(match_data1 == match_data_21){
+                            x = false;
+                        }
+                    }
+                    delete match_data1;
+                    delete match_data_21;
                     delete kl;
                     break;
 
