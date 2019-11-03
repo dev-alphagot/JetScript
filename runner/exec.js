@@ -71,8 +71,19 @@ async function start(code_prograss, codelet, virtual_memory, execute_before) {
                     console.log(k);
                     break;
 
-                
-    
+                case "if":
+                    let match_data = virtual_memory[`${execute[1]}`];
+                    let match_data_2 = virtual_memory[`${execute[2]}`];
+                    let kl
+                    for(let k = 3; k < execute.length; k++){
+                        kl += execute[k];
+                    }
+                    start(0, 1, virtual_memory, kl);
+                    delete match_data;
+                    delete match_data_2;
+                    delete kl;
+                    break;
+
                 default:
                     if(execute[1]){
                         if(execute[1] == "<-"){
@@ -81,6 +92,10 @@ async function start(code_prograss, codelet, virtual_memory, execute_before) {
                             virtual_memory[`${execute[0]}`] = virtual_memory[`${execute[2]}`];
                         } else if(execute[1] == "<=+"){
                             virtual_memory[`${execute[0]}`] += execute[2];
+                        } else if(execute[1] == "++"){
+                            virtual_memory[`${execute[0]}`]++;
+                        } else if(execute[1] == "--"){
+                            virtual_memory[`${execute[0]}`]--;
                         }
                     }
                     code_prograss++;

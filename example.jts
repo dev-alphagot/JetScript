@@ -1,7 +1,14 @@
 fnc  main;;
+fnc  k;;
+fnc  l;;
 main  <-  1*2;;
 compute  main;;
 ioout_buf  <=  main;;
 ioout;;
 ioout_buf  <=+  Hello, World!;;
 ioout;;
+if  k  l  end
+k  <-  2;;
+l  <-  2;;
+k  ++;;
+jump  2;;
