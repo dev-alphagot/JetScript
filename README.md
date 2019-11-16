@@ -2,7 +2,7 @@
 node.js based script language.
 
 ## Info
-본 언어는 GPL 3 라이선스 하에 배포되는 언어입니다.<br>
+본 언어는 WTFPL 라이선스 하에 배포되는 언어입니다.<br>
 본 언어는 Node.js 프레임워크 기반으로 작성된 언어이니, ``Node.js``와 ``npm (Node Package Manager)``의 설치가 필요합니다.<br>
 
 ## Start
